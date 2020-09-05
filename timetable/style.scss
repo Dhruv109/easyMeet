@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+$primary-color: #3531B6;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 3em;
+  .name{
+    font-weight: 400;
+    columns: #616161;
+  }
+  nav{
+    width:30%;
+    ul{
+      display: flex;
+      justify-content: space-around;
+      li{
+        list-style: none;
+        a{
+          text-decoration: none;
+          color : black;
+          transition: color 100ms ease;
+          &:hover{
+            color: $primary-color;
+          }
+        }
+    }
+    }
+}
+}
+.main{
+  width:90%;
+  margin:auto;
+  min-height:90vh;
+  display: flex;
+}
+.inputs{
+  flex: 1;
+}
+.timetable{
+  flex: 1.5;
+  display: grid;
+  height: inherit;
+  padding: 2em;
+  grid-template-columns: repeat(7,1fr);
+  grid-template-rows: repeat(10,1fr);
+  row-gap: 6%;
+  margin-bottom: 4em;
+  p{
+    font-size: 14px;
+    text-align: center;
+
+    font-weight: 400;
+    outline: 2px solid #3531B6;
+    padding: 0 4px;
+  }
+  .slot{
+    font-weight: 400;
+    color: #808080;
+    background-color: #fff;
+
+  }
+  box-shadow: 0 0 20px 1px rgba(0,0,0,0.15);
+}
+.inputs{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .input_1{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-bottom: 1em;
+    #day,#slot{
+      height: 40px;
+      margin-bottom: 1.5em;
+      padding: 10px;
+    }
+    #slot{
+      margin-bottom: 3em;
+    }
+  }
+    .input_2{
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin-bottom: 1em;
+      #className,#meetLink{
+        padding: 10px;
+        height: 40px;
+        margin-bottom: 2em;
+        position: relative;
+      }
+
+    }
+  
+    #enter{
+      width:70%;
+      height: 40px;
+      border: none;
+    
+      background-color: #3531B6;
+      color: white;
+      letter-spacing: 1px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 200ms ease;
+      &:hover{
+        background-color: #1c188d;
+      }
+     
+    }
+
+
+  .head{
+    width: 12ch;
+    font-weight: 500;
+    margin-bottom: 2em;
+  }
+}
+select{
+  border: none;
+  appearance: none;
+  outline: 1px solid black;
+  color: black;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.label{
+  font-size: 12px;
+  color: #5c5c5c;
+}
+
+.tt{
+  border-bottom: 2px solid blue;
+}
+
+.deletebtn{
+  width:70%;
+  height: 40px;
+  margin:1em 0;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: $primary-color;
+  outline: 1px solid $primary-color;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.deleteForm{
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.1 ease;
+  .classDelete{
+    height: 30px;
+    width: 70%;
+    padding: 0 10px;
+    //margin-bottom: 1em;
+  }
+  .submitDelete{
+    border: none;
+    color:white;
+    background-color: red;
+    width:70%;
+    height: 30px;
+    margin-bottom: 4em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    &:hover{
+      background-color: rgb(197, 9, 9);
+    }
+  }
+}
+
+.open{
+  opacity: 1;
+}

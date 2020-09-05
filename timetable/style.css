@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+header .name {
+  font-weight: 400;
+  -webkit-columns: #616161;
+          columns: #616161;
+}
+
+header nav {
+  width: 30%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color 100ms ease;
+  transition: color 100ms ease;
+}
+
+header nav ul li a:hover {
+  color: #3531B6;
+}
+
+.main {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inputs {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.timetable {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  display: -ms-grid;
+  display: grid;
+  height: inherit;
+  padding: 2em;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  row-gap: 6%;
+  margin-bottom: 4em;
+  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.15);
+}
+
+.timetable p {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  outline: 2px solid #3531B6;
+  padding: 0 4px;
+}
+
+.timetable .slot {
+  font-weight: 400;
+  color: #808080;
+  background-color: #fff;
+}
+
+.inputs {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inputs .input_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  margin-bottom: 1em;
+}
+
+.inputs .input_1 #day, .inputs .input_1 #slot {
+  height: 40px;
+  margin-bottom: 1.5em;
+  padding: 10px;
+}
+
+.inputs .input_1 #slot {
+  margin-bottom: 3em;
+}
+
+.inputs .input_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  margin-bottom: 1em;
+}
+
+.inputs .input_2 #className, .inputs .input_2 #meetLink {
+  padding: 10px;
+  height: 40px;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.inputs #enter {
+  width: 70%;
+  height: 40px;
+  border: none;
+  background-color: #3531B6;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+}
+
+.inputs #enter:hover {
+  background-color: #1c188d;
+}
+
+.inputs .head {
+  width: 12ch;
+  font-weight: 500;
+  margin-bottom: 2em;
+}
+
+select {
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 1px solid black;
+  color: black;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.label {
+  font-size: 12px;
+  color: #5c5c5c;
+}
+
+.tt {
+  border-bottom: 2px solid blue;
+}
+
+.deletebtn {
+  width: 70%;
+  height: 40px;
+  margin: 1em 0;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: #3531B6;
+  outline: 1px solid #3531B6;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.deleteForm {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: opacity 0.1 ease;
+  transition: opacity 0.1 ease;
+}
+
+.deleteForm .classDelete {
+  height: 30px;
+  width: 70%;
+  padding: 0 10px;
+}
+
+.deleteForm .submitDelete {
+  border: none;
+  color: white;
+  background-color: red;
+  width: 70%;
+  height: 30px;
+  margin-bottom: 4em;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.deleteForm .submitDelete:hover {
+  background-color: #c50909;
+}
+
+.open {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

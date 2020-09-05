@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+<header>
+  <h3 class='name'>easyMeet</h3>
+  <nav>
+    <ul>
+      <li class='tt'><a href="../timetable/timetable.html">Timetable</a></li>
+      <li class='links'><a href="../linkpage/links.html">Links</a></li>
+      <li class='home'><a href="/">Home</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="main">
+  <div class="inputs">
+    <h2 class='head'>Make Your Timetable Here</h2>
+    <form class='form' autocomplete="off">
+    <div class="input_1">
+      <label for="day" class='label'>Day(s)</label>
+      <select name="day" id="day" class='select' required>
+        <option value="1">M-W-F</option>
+        <option value="2">T-T-S</option>
+        <option value="mon">Monday</option>
+        <option value="tue">Tuesday</option>
+        <option value="wed">Wednesday</option>
+        <option value="thu">Thursday</option>
+        <option value="fri">Friday</option>
+        <option value="sat">Saturday</option>
+      </select>
+      <label for="slot" class='label'>Slot</label>
+      <select name="slot" id="slot" class='select'>
+        <option value="slot_1">8-9</option>
+        <option value="slot_2">9-10</option>
+        <option value="slot_3">10-11</option>
+        <option value="slot_4">11-12</option>
+        <option value="slot_5">12-1</option>
+        <option value="slot_6">1-2</option>
+        <option value="slot_7">2-3</option>
+        <option value="slot_8">3-4</option>
+        <option value="slot_9">4-5</option>
+      </select>
+    </div>
+    <div class="input_2">
+     <label for="className" class='label'>Subject Name/Nickname</label>
+      <input type="text" id='className' name="className" required />
+      <label for="meetLink" class='label'>Google meet link(xyz-xyz-xyz)</label>
+      <input type="text" id='meetLink' name="meetLink" required /> 
+    </div>
+    <button type="submit" id='enter'>ENTER</button>
+    </form>
+    <button class='deletebtn'>Delete a Class</button>
+    <form class='deleteForm'>
+      <label class='label' for="classDelete">Subject Name</label>
+      <input type="text" class='classDelete' name='classDelete' required />
+      <button type = 'submit' class='submitDelete'>Delete</button>
+    </form>
+  </div>
+  
+  <div class="timetable">
+    <p>Time</p>
+    <p>Mon</p>
+    <p>Tue</p>
+    <p>Wed</p>
+    <p>Thu</p>
+    <p>Fri</p>
+    <p>Sat</p>
+   
+    <p>8-9</p>
+    <p class="slot_1 mon slot"></p>
+    <p class="slot_1 tue slot"></p>
+    <p class="slot_1 wed slot"></p>
+    <p class="slot_1 thu slot"></p>
+    <p class="slot_1 fri slot"></p>
+    <p class="slot_1 sat slot"></p>
+    <p>9-10</p>
+    <p class="slot_2 mon slot"></p>
+    <p class="slot_2 tue slot"></p>
+    <p class="slot_2 wed slot"></p>
+    <p class="slot_2 thu slot"></p>
+    <p class="slot_2 fri slot"></p>
+    <p class="slot_2 sat slot"></p>
+    <p>10-11</p>
+    <p class="slot_3 mon slot"></p>
+    <p class="slot_3 tue slot"></p>
+    <p class="slot_3 wed slot"></p>
+    <p class="slot_3 thu slot"></p>
+    <p class="slot_3 fri slot"></p>
+    <p class="slot_3 sat slot"></p>
+    <p>11-12</p>
+    <p class="slot_4 mon slot"></p>
+    <p class="slot_4 tue slot"></p>
+    <p class="slot_4 wed slot"></p>
+    <p class="slot_4 thu slot"></p>
+    <p class="slot_4 fri slot"></p>
+    <p class="slot_4 sat slot"></p>
+    <p>12-1</p>
+    <p class="slot_5 mon slot"></p>
+    <p class="slot_5 tue slot"></p>
+    <p class="slot_5 wed slot"></p>
+    <p class="slot_5 thu slot"></p>
+    <p class="slot_5 fri slot"></p>
+    <p class="slot_5 sat slot"></p>
+    <p>1-2</p>
+    <p class="slot_6 mon slot"></p>
+    <p class="slot_6 tue slot"></p>
+    <p class="slot_6 wed slot"></p>
+    <p class="slot_6 thu slot"></p>
+    <p class="slot_6 fri slot"></p>
+    <p class="slot_6 sat slot"></p>
+    <p>2-3</p>
+    <p class="slot_7 mon slot"></p>
+    <p class="slot_7 tue slot"></p>
+    <p class="slot_7 wed slot"></p>
+    <p class="slot_7 thu slot"></p>
+    <p class="slot_7 fri slot"></p>
+    <p class="slot_7 sat slot"></p>
+    <p>3-4</p>
+    <p class="slot_8 mon slot"></p>
+    <p class="slot_8 tue slot"></p>
+    <p class="slot_8 wed slot"></p>
+    <p class="slot_8 thu slot"></p>
+    <p class="slot_8 fri slot"></p>
+    <p class="slot_8 sat slot"></p>
+    <p>4-5</p>
+    <p class="slot_9 mon slot"></p>
+    <p class="slot_9 tue slot"></p>
+    <p class="slot_9 wed slot"></p>
+    <p class="slot_9 thu slot"></p>
+    <p class="slot_9 fri slot"></p>
+    <p class="slot_9 sat slot"></p>
+  </div>
+
+</div>
+  
+
+<script src='app.js'></script>
+</body>
+</html>
