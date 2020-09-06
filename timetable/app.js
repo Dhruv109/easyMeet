@@ -8,6 +8,8 @@ const deleteBtn = document.querySelector('.deletebtn');
 const deleteForm = document.querySelector('.deleteForm');
 const submitDelete = document.querySelector('.submitDelete');
 const subjectDelete = document.querySelector('.classDelete');
+let open = false;
+
 
 subjectInput.required = true;
 linkInput.required = true;
@@ -29,7 +31,11 @@ submitDelete.addEventListener('click',()=>{
 })
 
 deleteBtn.addEventListener('click',()=>{
-  deleteForm.classList.toggle('open');
+  if(!open){
+    deleteForm.classList.add('open');
+  }
+  else deleteForm.classList.remove('open');
+  open = !open;
 })
 
 enter.addEventListener('click',()=>{

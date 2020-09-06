@@ -110,3 +110,33 @@ header{
     background-color: rgb(4, 4, 63);
   }
 }
+
+@media screen and (max-width: 420px)
+{
+  header{
+    flex-direction: column;
+    .name{
+      padding: 1em;
+    }
+    nav{
+      width: 100%;
+    }
+  }
+  .subhead{
+    font-size: 0.7em;
+    max-width: 30ch;
+  }
+  .head{
+    font-size: 1.3em;
+  }
+  .meet-box{
+    height: 200px;
+    width: 200px;
+  }
+  .boxText{
+    font-size: 1em;
+  }
+  .block h2{
+    font-size: 1.5em;
+  }
+}

@@ -164,4 +164,36 @@ header nav ul li a:hover {
 .block:hover {
   background-color: #04043f;
 }
+
+@media screen and (max-width: 420px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .name {
+    padding: 1em;
+  }
+  header nav {
+    width: 100%;
+  }
+  .subhead {
+    font-size: 0.7em;
+    max-width: 30ch;
+  }
+  .head {
+    font-size: 1.3em;
+  }
+  .meet-box {
+    height: 200px;
+    width: 200px;
+  }
+  .boxText {
+    font-size: 1em;
+  }
+  .block h2 {
+    font-size: 1.5em;
+  }
+}
 /*# sourceMappingURL=style3.css.map */
