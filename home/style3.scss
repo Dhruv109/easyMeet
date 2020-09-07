@@ -111,6 +111,15 @@ header{
   }
 }
 
+@media screen and (max-width: 700px){
+  header nav{
+    width:50%;
+  }
+  .subhead{
+    max-width: 30ch;
+  }
+}
+
 @media screen and (max-width: 420px)
 {
   header{

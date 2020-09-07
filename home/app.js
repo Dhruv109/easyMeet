@@ -10,7 +10,7 @@ function setFromStorage(){
   let d = new Date();
   let day = d.getDay();
   let hour = d.getHours();
-  hour = hour%12;
+  if(hour<17) hour = hour%12;
 
   let minutes = d.getMinutes();
   console.log(day,hour,minutes);

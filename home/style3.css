@@ -165,6 +165,15 @@ header nav ul li a:hover {
   background-color: #04043f;
 }
 
+@media screen and (max-width: 700px) {
+  header nav {
+    width: 50%;
+  }
+  .subhead {
+    max-width: 30ch;
+  }
+}
+
 @media screen and (max-width: 420px) {
   header {
     -webkit-box-orient: vertical;

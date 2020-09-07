@@ -222,3 +222,8 @@ select{
     font-size: 1em;
   }
 }
+@media screen and (max-width: 700px){
+  header nav{
+    width:50%;
+  }
+}
