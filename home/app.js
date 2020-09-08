@@ -15,9 +15,10 @@ function setFromStorage(){
   let minutes = d.getMinutes();
   console.log(day,hour,minutes);
 
-
-  if(items) let todayClasses = items.filter(item=>item.day==days[day]);
-
+  let todayClasses = [];
+  if(items) {
+    todayClasses = items.filter(item=>item.day==days[day]);
+  }
   let flag = false;
 
 
