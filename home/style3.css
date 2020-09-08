@@ -4,7 +4,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: hidden;
 }
 
 body {
@@ -60,11 +59,12 @@ header nav ul li a:hover {
   color: #3531B6;
 }
 
-.links {
+.home {
   border-bottom: 2px solid #3531B6;
 }
 
-.main {
+.container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,8 +72,9 @@ header nav ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  min-height: 90vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -81,34 +82,12 @@ header nav ul li a:hover {
           animation: fade 0.3s ease-in;
 }
 
-.main .heading {
-  font-size: 2em;
-  margin: 0em 0 2em 0;
-}
-
-.nolink {
+.container .subhead {
+  width: 42ch;
   text-align: center;
+  margin: 1em;
+  font-weight: 400;
   color: gray;
-  font-weight: 500;
-}
-
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  row-gap: 2em;
-  -webkit-column-gap: 4em;
-          column-gap: 4em;
-}
-
-.container a {
-  text-decoration: none;
-  color: #a8a8a8;
-}
-
-.container a h3 {
-  color: white;
 }
 
 @-webkit-keyframes fade {
@@ -129,20 +108,59 @@ header nav ul li a:hover {
   }
 }
 
+.meet-box {
+  height: 300px;
+  width: 300px;
+  background-color: #3531B6;
+  margin-top: 5em;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxText {
+  color: white;
+  font-size: 2em;
+  padding-bottom: 10px;
+  width: 80%;
+  text-align: center;
+}
+
 .block {
-  background-color: #3e3e3e;
-  border-radius: 10px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  outline-color: 5px solid white;
+  width: 100%;
+  background-color: #101077;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.block a {
+  text-decoration: none;
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+.block h2 {
+  font-size: 2.5rem;
+}
+
+.block p {
+  color: #bdbdbd;
 }
 
 .block:hover {
-  background-color: #3531B6;
+  background-color: #04043f;
 }
-
-.tiles {
-  width: 100%;
-  height: 100%;
-  padding: 2em;
-}
-/*# sourceMappingURL=style2.css.map */
+/*# sourceMappingURL=style3.css.map */
