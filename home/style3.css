@@ -133,6 +133,7 @@ header nav ul li a:hover {
   color: white;
   font-size: 2em;
   padding-bottom: 10px;
+  font-weight: 500;
   width: 80%;
   text-align: center;
 }
